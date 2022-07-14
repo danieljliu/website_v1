@@ -20,7 +20,7 @@ export default function Home() {
             <div id="projects">
                 <Projects/>
             </div>
-            <div id="contact" class={"h-16"}>
+            <div id="contact" className={"h-16"}>
                 <Contact/>
             </div>
         </div>
