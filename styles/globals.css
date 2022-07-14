@@ -14,3 +14,41 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap') format("woff");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap') format("woff");
+}
+
+
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center
+    h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
+    bg-gray-100 text-blue-400
+    dark:bg-gray-800 dark:text-green-500
+    hover:bg-blue-500 hover:text-white
+    dark:hover:bg-green-600 dark:hover:text-white
+    rounded-3xl hover:rounded-xl
+    transition-all duration-300 ease-linear
+    cursor-pointer;
+  }
+
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14
+    rounded-md shadow-md
+    text-white bg-gray-900
+    text-xs font-bold
+    transition-all duration-100 scale-0 origin-left;
+  }
+}
