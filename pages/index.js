@@ -1,5 +1,5 @@
-import NavBar from './Components/NavBar'
-import Head from 'next/head'
+import NavBar from "./Components/NavBar"
+import Head from "next/head"
 import About from "./Components/About";
 import Namecard from "./Components/Namecard";
 import Contact from "./Components/Contact";
@@ -7,7 +7,7 @@ import Projects from "./Components/Projects";
 
 export default function Home() {
     return (
-        <div className="bg-white dark:bg-gray-700 h-full m-0 p-0">
+        <div className="bg-white dark:bg-gray-700 h-full m-0 p-0 flex flex-col space-y-40">
             <Head>
                 <title>Daniel Liu</title>
                 <meta name="description" content="Personal Website of Daniel J Liu"/>
@@ -20,7 +20,7 @@ export default function Home() {
             <div id="projects">
                 <Projects/>
             </div>
-            <div id="contact" className={"h-16"}>
+            <div id="contact" className = "h-[22vh]">
                 <Contact/>
             </div>
         </div>

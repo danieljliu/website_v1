@@ -15,10 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "Raleway";
   src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap') format("woff");
@@ -52,3 +48,7 @@ a {
     transition-all duration-100 scale-0 origin-left;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
